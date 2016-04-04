@@ -1,0 +1,31 @@
+@font-face
+{
+	font-family: orbitron;
+	src: url("../fonts/orbitron/Orbitron-Medium.woff") format("woff");
+}
+
+@font-face
+{
+	font-family: orbitron;
+	font-weight: bold;
+	src: url("../fonts/orbitron/Orbitron-Bold.woff") format("woff");
+}
+
+body
+{
+	font-family: orbitron;
+}
+
+#workoutOverview
+{
+	margin: auto;
+	width: 300px;
+	height: 300px;
+	border-collapse: collapse;
+}
+
+table, th, td
+{
+	border: 1px solid black;
+	text-align: center;
+}
