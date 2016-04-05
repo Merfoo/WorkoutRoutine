@@ -1,19 +1,19 @@
 @font-face
 {
-	font-family: orbitron;
-	src: url("../fonts/orbitron/Orbitron-Medium.woff") format("woff");
+	font-family: open-sans;
+	src: url("../fonts/open-sans/open-sans-regular.woff") format("woff");
 }
 
 @font-face
 {
-	font-family: orbitron;
+	font-family: open-sans;
 	font-weight: bold;
-	src: url("../fonts/orbitron/Orbitron-Bold.woff") format("woff");
+	src: url("../fonts/open-sans/open-sans-semibold.woff") format("woff");
 }
 
 body
 {
-	font-family: orbitron;
+	font-family: open-sans;
 }
 
 table, th, td
@@ -22,15 +22,22 @@ table, th, td
 	text-align: center;
 }
 
+li
+{
+	padding: 5px;
+}
+
 .exerciseTitle
 {
 	font-size: 125%;
 	font-weight: bold;
+	margin-bottom: -15px;
 }
 
 .exerciseDay
 {
-
+	margin: auto;
+	width: 500px;
 }
 
 .viewType
@@ -69,6 +76,7 @@ table, th, td
 	width: 100%;
 	height: 100%;	
 }
+
 #overviewTable
 {
 	margin: auto;
