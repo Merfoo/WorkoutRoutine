@@ -5,43 +5,81 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src="js/main.js"></script>
 	</head>
 	<body>
-		<div>
-			<table id="workoutOverview">
-				<tr>
-					<th>Day</th>
-					<th>Activity</th>
-				</tr>
-				<tr>
-					<td>S</td>
-					<td>Chest & Armz</td>
-				</tr>
-				<tr>
-					<td>M</td>
-					<td>Shoulders & Back</td>
-				</tr>
-				<tr>
-					<td>T</td>
-					<td>Legs</td>
-				</tr>
-				<tr>
-					<td>W</td>
-					<td>Rest</td>
-				</tr>
-				<tr>
-					<td>H</td>
-					<td>Upper Body</td>
-				</tr>
-				<tr>
-					<td>F</td>
-					<td>Legs</td>
-				</tr>
-				<tr>
-					<td>S</td>
-					<td>Rest</td>
-				</tr>
-			</table>
+		<div id="options">
+			<div id="overviewOption" class="viewType" onclick="showOverview()">Overview</div>
+			<div id="detailOption" class="viewType" onclick="showDetail()">Detail</div>
+		</div>
+		<div id="content">
+			<div id="overview">
+				<table id="overviewTable">
+					<tr>
+						<th>Day</th>
+						<th>Activity</th>
+					</tr>
+					<tr>
+						<td>S</td>
+						<td>Chest & Armz</td>
+					</tr>
+					<tr>
+						<td>M</td>
+						<td>Shoulders & Back</td>
+					</tr>
+					<tr>
+						<td>T</td>
+						<td>Legs</td>
+					</tr>
+					<tr>
+						<td>W</td>
+						<td>Rest</td>
+					</tr>
+					<tr>
+						<td>H</td>
+						<td>Upper Body</td>
+					</tr>
+					<tr>
+						<td>F</td>
+						<td>Legs</td>
+					</tr>
+					<tr>
+						<td>S</td>
+						<td>Rest</td>
+					</tr>
+				</table>
+			</div>
+			<div id="detail">
+				<div class="exerciseDay">
+					<p class="exerciseTitle">Sunday: Chest & Armz</p>
+					<ul>
+						<li>
+							<a href="http://www.bodybuilding.com/exercises/detail/view/name/barbell-bench-press-medium-grip">
+								Flat Bench
+							</a>
+							, 3 sets of 8 reps
+						</li>
+						<li>
+							<a href="http://www.bodybuilding.com/exercises/detail/view/name/barbell-incline-bench-press-medium-grip">
+								Incline Bench
+							</a>
+							, 3 sets of 8 reps
+						</li>
+						<li>
+							<a href="http://www.bodybuilding.com/exercises/detail/view/name/incline-cable-flye">
+								Incline Cable Flies
+							</a>
+							, 3 sets of 8 reps
+						</li>
+					</ul>
+				</div>
+				<div class="exerciseDay">
+					<p class="exerciseTitle">Monday: Shoulders & Back</p>
+					<ul>
+						<li>Bent-over rows, 3 sets of 8 reps</li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
